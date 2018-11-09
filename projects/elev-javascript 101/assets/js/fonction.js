@@ -92,3 +92,5 @@ document.getElementsByTagName("button")[0].addEventListener("mouseenter", functi
 document.querySelector("button").addEventListener("mouseleave", function(){
     myTime = setInterval(myTimer, 1000 );
 });
+
+asd

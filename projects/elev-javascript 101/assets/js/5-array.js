@@ -8,3 +8,5 @@ var friend4 = "måna";
 // list a group of friends using an array
 
 var friends = ["måns", "sten", "claes", "måna"]; // string, numbers, booleans, objects
+
+asd
