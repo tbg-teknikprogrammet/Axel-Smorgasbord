@@ -64,3 +64,31 @@ function area(length, height){
 }
 
 area(5, 10);
+
+function sing(){
+    console.log("im singing in the rain!")
+    console.log("its funny on a sunny day!")
+}
+
+setInterval(sing, 2500);
+
+var anon = setInterval(function(){
+    console.log("im a anonymous function")
+});
+
+function myTimer(){
+    var d = new Date();
+    document.getElementById("output").innerHTML = d.toLocaleTimeString();
+}
+
+myTimer();
+
+var myTime = setInterval(myTimer, 1000);
+
+document.getElementsByTagName("button")[0].addEventListener("mouseenter", function(){
+    clearInterval(myTime);
+});
+
+document.querySelector("button").addEventListener("mouseleave", function(){
+    myTime = setInterval(myTimer, 1000 );
+});
