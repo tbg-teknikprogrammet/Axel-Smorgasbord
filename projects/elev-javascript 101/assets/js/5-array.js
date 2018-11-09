@@ -9,4 +9,4 @@ var friend4 = "måna";
 
 var friends = ["måns", "sten", "claes", "måna"]; // string, numbers, booleans, objects
 
-asd
+asdasd
