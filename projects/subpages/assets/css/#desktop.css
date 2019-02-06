@@ -13,3 +13,11 @@ body {
     transform: rotate(180deg);
     font-style: italic;
 }
+
+.another-class{
+    color: purple;
+    letter-spacing: 1px;
+    transform: skew(100deg);
+    font-style: italic;
+}
+
