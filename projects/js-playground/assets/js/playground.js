@@ -99,3 +99,40 @@ renderTime()
 
 window.setInterval(() => {renderTime()}, 1000)
 
+var img = ["assets/img/te16 2019 guld.jpg","assets/img/hund.jpg","assets/img/cat.jpg","assets/img/aikmobil.png.jpeg" ]
+var imgnmr = 0;
+var forw = document.getElementById("forwimg");
+var slider = document.getElementById("slider");
+forwimg.addEventListener("click", function(){
+  imgnmr++;
+  if(imgnmr <= 3)
+  {
+    slider.src= img[imgnmr]
+  }
+  else
+  {
+    imgnmr = 0;
+    slider.src= img[imgnmr]
+  }
+  console.log(imgnmr)
+});
+backimg.addEventListener("click", function(){
+  imgnmr--;
+  if(imgnmr >= 0)
+  {
+    slider.src= img[imgnmr]
+  }
+  else
+  {
+    imgnmr = 3;
+    slider.src= img[imgnmr]
+  }
+  console.log(imgnmr)
+});
+mapboxgl.accessToken = 'pk.eyJ1Ijoib2Jqb3JrMDAiLCJhIjoiY2p3MjJwNTY4MDJuNDN6bzUydjdpMW8wNyJ9.dubOAjBI2hY0dIUUb7Rodw';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/objork00/cjw6hkjez0fqd1cnxqygdppw0',
+                center: [18.671711, 64.594866],
+                zoom: 13.00
+                });

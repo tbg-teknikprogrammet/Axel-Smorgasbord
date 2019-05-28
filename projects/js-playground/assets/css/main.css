@@ -21,8 +21,8 @@ body{
 
 .grid-layout{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    
+    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     
     grid-gap: 10px;
 }
@@ -59,6 +59,7 @@ a .layout-item{
     border: solid 1px black;
     width: 400px;
     height: 270px;
+    background-color: black;
 }
 
 .item-5 {
@@ -72,27 +73,26 @@ a .layout-item{
     width: 400px;
     height: 270px;
 }
-
-
-/*/.overlay {
-    width: 100vw;
-    height: 100vh;
-    background: rgba(204, 198, 198, 0.877);
-    position:absolute;
-    top:0;
-    left:0;
+#slideshow{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+#backimg{
+    margin:0;
+    height: 100%;
+}
+#forwimg{
+    margin:0;
+    height:100%;
+}
+#slider{
+    padding: 0 10;
+}
+section p{
+    margin: 0 auto;
+    text-align: center;
 }
 
-//.Login {
-    width: 100vw;
-    height: 100vh;
-    background: rgba(204, 50, 198, 0.877);
-    position:absolute;
-    top:0;
-    left:0;
-
-}
-/*/
 .toggle {
     background-color: black;
 }
@@ -107,5 +107,5 @@ a .layout-item{
     justify-content: center
     
     #time
-        color: #000
+        color: #EEEEE
         font-size: 24px
